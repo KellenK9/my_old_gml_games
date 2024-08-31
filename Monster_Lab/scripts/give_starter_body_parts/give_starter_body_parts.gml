@@ -1,0 +1,36 @@
+//
+function give_starter_body_parts(){
+	file = file_text_open_write(working_directory + "body_parts.txt")
+	
+	file_text_write_string(file, "1,head,Human Head,10,1,0,0")
+	//An effect ID of 0 means that effect is not present
+	file_text_writeln(file)
+	file_text_write_string(file, "2,torso,Chubby Tummy,20,2,3,0")
+	file_text_writeln(file)
+	file_text_write_string(file, "3,right_arm,Boxer's Arm,8,4,5,0")
+	file_text_writeln(file)
+	file_text_write_string(file, "4,left_arm,Boxer's Arm,8,4,5,0")
+	file_text_writeln(file)
+	file_text_write_string(file, "5,right_leg,Human Leg,8,6,7,0")
+	file_text_writeln(file)
+	file_text_write_string(file, "6,left_leg,Human Leg,8,6,7,0")
+	file_text_writeln(file)
+	file_text_close(file)
+	
+	file2 = file_text_open_write(working_directory + "abilities.txt")
+	file_text_write_string(file2, "1, Bite, (left_arm), 5, 7, 0, 0, (), attack")
+	file_text_writeln(file2)
+	file_text_write_string(file2, "2, Body Slam, (right_arm right_leg left_arm left_leg head torso), 1, 2, 0, 0, (), attack")
+	file_text_writeln(file2)
+	file_text_write_string(file2, "3, Focus, (), 0, 0, 0, 4, (head torso), attack")
+	file_text_writeln(file2)
+	file_text_write_string(file2, "4, Uppercut, (head torso), 3, 5, 0, 0, (), attack")
+	file_text_writeln(file2)
+	file_text_write_string(file2, "5, Jab, (head), 5, 7, 0, 0, (), attack")
+	file_text_writeln(file2)
+	file_text_write_string(file2, "6, RoundHouse, (right_arm), 8, 8, 0, 0, (), attack")
+	file_text_writeln(file2)
+	file_text_write_string(file2, "7, Sweep, (right_leg left_leg), 5, 7, 0, 0, (), attack")
+	file_text_writeln(file2)
+	file_text_close(file2)
+}

@@ -1,0 +1,3 @@
+/// @description
+
+attacking = false

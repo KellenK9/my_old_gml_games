@@ -1,0 +1,2 @@
+/// @desc Restartable
+restartable = true;
